@@ -15,6 +15,15 @@ app.get("/consulta", (req,res) => {
     res.render("page/consulta")
 });
 
+app.get("/login", (req, res)=> {
+    res.render("page/login")
+})
+
+app.get("/cadastro", (req, res)=> {
+    res.render("page/cadastro")
+})
+
+
 app.listen(port, () => {
     console.log(`Servidor iniciado: ${port}`);
 });
